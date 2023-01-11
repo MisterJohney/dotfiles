@@ -1,4 +1,11 @@
 # dotfiles
 My dotfiles (What else did you expect?)
 
-This is my first git
+
+## for me to remember
+git status
+git add .
+git commit -m "Message"
+git push
+
+TODO: Need to add nvim config
