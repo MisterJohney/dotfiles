@@ -7,5 +7,3 @@ git status
 git add .
 git commit -m "Message"
 git push
-
-TODO: Need to add nvim config
