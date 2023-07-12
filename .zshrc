@@ -1,5 +1,3 @@
-# Luke's config for the Zoomer Shell
-
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -80,37 +78,30 @@ bindkey -M vicmd '^[[P' vi-delete-char
 bindkey -M vicmd '^e' edit-command-line
 bindkey -M visual '^[[P' vi-delete
 
-
-# Switching Caps_Lock with Escape
-#xmodmap ~/.config/Xmodmap/Xmodmap #2>/dev/null
-
 # Aliases
-
-#alias xmrminer="cd ~/Downloads/xmrig/build ; sudo ./xmrig -o gulf.moneroocean.stream:10128 -u 48KAhpBKeReQrdpJqTyTEFGHYLKscEqfBefnFzoD3fNaUj4ySkmZ7CAfsPShbUgfZNQr5EJiq6DQiZJpdmXrdFVKNG5WnKn"
-alias xmrminer="cd ~/Downloads/xmrig-6.16.4-mo1/build ; sudo ./xmrig"
-alias yt="cd ~/yt/ ; yt-dlp --audio-quality best -f 399+251"
-
-alias cmp="gcc *.c; ./a.out"
-alias ssh_melns="ssh -p 2222 melns@192.168.8.107"
-alias ms="cd ~/Documents/Minecraft_server/; ./start.sh"
-alias c="cd /home/rihards/Downloads/ran/programming/python_projects/minecraft_miner; python crafter.py"
 
 alias v="nvim"
 alias ..="cd .."
 alias ls="exa -al --color=always --group-directories-first"
-alias ll="exa -l --color=always --group-directories-first"
-alias cal="cal -m"
 alias p="python3"
-alias g="go run"
-alias pul="pulsemixer"
-alias pulse="pulsemixer"
-alias mb1="sudo mount /dev/sdb1 /mnt/sdb"
-alias mc1="sudo mount /dev/sdc1 /mnt/sdc"
-alias ub1="sudo umount /dev/sdb1"
-alias uc1="sudo umount /dev/sdc1"
-alias glcmp="g++ main.cpp -lglfw -lGL -lm -lX11 -pthread -lXi -lXrandr -ldl"
 alias mount_phone="simple-mtpfs --device 1 ~/phone"
 alias untar="tar -xvzf"
+alias yt="cd ~/yt/ ; yt-dlp --audio-quality best -f 399+251"
+alias ytmusic="yt-dlp -x --parse-metadata 'playlist_index:%(track_number)s' --add-metadata"
+
+# Might delete theese later
+alias cmp="gcc *.c; ./a.out"
+alias ssh_melns="ssh -p 2222 melns@192.168.8.107"
+alias ms="cd ~/Documents/Minecraft_server/; ./start.sh"
+alias c="cd /home/rihards/Downloads/ran/programming/python_projects/minecraft_miner; python crafter.py"
+alias xmrminer="cd ~/Downloads/xmrig-6.16.4-mo1/build ; sudo ./xmrig"
+alias ub1="sudo umount /dev/sdb1"
+alias uc1="sudo umount /dev/sdc1"
+alias g="go run"
+alias mb1="sudo mount /dev/sdb1 /mnt/sdb"
+alias mc1="sudo mount /dev/sdc1 /mnt/sdc"
+alias glcmp="g++ main.cpp -lglfw -lGL -lm -lX11 -pthread -lXi -lXrandr -ldl"
+alias cal="cal -m"
 
 
 # Load syntax highlighting; should be last.

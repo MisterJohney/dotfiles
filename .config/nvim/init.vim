@@ -53,6 +53,7 @@ set nocompatible
 set encoding=utf-8
 set number relativenumber
 set ignorecase
+set linebreak
 set nu
 colorscheme gruvbox
 filetype plugin on
